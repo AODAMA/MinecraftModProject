@@ -6,6 +6,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.BlockGetter;
@@ -40,10 +41,23 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
 
     @Override
     public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate) {
-        if (context.getItemInHand().getItem() instanceof AxeItem) {
+        Item itemInHand = context.getItemInHand().getItem();
+        BlockState clickedBlockState = context.getLevel().getBlockState(context.getClickedPos());
+
+        if (itemInHand instanceof AxeItem) {
             // Drop an item and return the modified block state
             dropItem(context.getLevel(), context.getClickedPos());
-            return Blocks.OAK_LOG.defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+
+            // Check if the clicked block is oak log
+            if (clickedBlockState.getBlock() == ModBlocks.MOSSY_OAK_LOG.get()) {
+                return Blocks.OAK_LOG.defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            // Add more conditions for other log types here
+            else if (clickedBlockState.getBlock() == ModBlocks.MOSSY_BIRCH_LOG.get()) {
+                return Blocks.BIRCH_LOG.defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            // Add more conditions for other log types here
+            // Add more conditions for other log types here
         }
         return super.getToolModifiedState(state, context, toolAction, simulate);
     }

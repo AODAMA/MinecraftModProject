@@ -23,6 +23,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MOSSY_OAK_LOG = registerBlock("mossy_oak_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> MOSSY_BIRCH_LOG = registerBlock("mossy_birch_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_LOG)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

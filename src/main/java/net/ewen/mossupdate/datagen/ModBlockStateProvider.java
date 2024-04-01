@@ -17,6 +17,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
     logBlock(((RotatedPillarBlock) ModBlocks.MOSSY_OAK_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.MOSSY_BIRCH_LOG.get()));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){

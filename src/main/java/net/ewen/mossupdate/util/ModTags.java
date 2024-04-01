@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 public class ModTags {
     public static class Blocks {
     public static final TagKey<Block> MOSSY_OAK_LOG = tag("mossy_oak_log");
+        public static final TagKey<Block> MOSSY_BIRCH_LOG = tag("mossy_birch_log");
         private static TagKey<Block> tag(String name){
             return BlockTags.create(new ResourceLocation(MossUpdate.MOD_ID, name));
         }

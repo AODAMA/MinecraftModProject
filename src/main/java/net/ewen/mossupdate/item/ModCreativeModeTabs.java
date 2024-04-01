@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
 
                     pOutput.accept(ModItems.MOSS_SPORES.get());
                     pOutput.accept(ModBlocks.MOSSY_OAK_LOG.get());
+                        pOutput.accept(ModBlocks.MOSSY_BIRCH_LOG.get());
                     pOutput.accept(Items.MOSS_BLOCK);
                     pOutput.accept(Items.MOSS_CARPET);
 

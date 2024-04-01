@@ -21,6 +21,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(BlockTags.LOGS_THAT_BURN)
-                .add(ModBlocks.MOSSY_OAK_LOG.get());
+                .add(ModBlocks.MOSSY_OAK_LOG.get())
+                .add(ModBlocks.MOSSY_BIRCH_LOG.get());
     }
 }

@@ -22,6 +22,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(ItemTags.LOGS_THAT_BURN)
-                .add(ModBlocks.MOSSY_OAK_LOG.get().asItem());
+                .add(ModBlocks.MOSSY_OAK_LOG.get().asItem())
+                .add(ModBlocks.MOSSY_BIRCH_LOG.get().asItem());
     }
 }

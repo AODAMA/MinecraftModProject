@@ -25,7 +25,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate(){
-    this.dropSelf(ModBlocks.MOSSY_OAK_LOG.get());
+
+        this.dropSelf(ModBlocks.MOSSY_OAK_LOG.get());
+        this.dropSelf(ModBlocks.MOSSY_BIRCH_LOG.get());
     }
 
     @Override

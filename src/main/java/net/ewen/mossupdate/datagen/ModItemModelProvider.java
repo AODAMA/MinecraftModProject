@@ -23,7 +23,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
 
         simpleItem(ModItems.MOSS_SPORES);
-        simpleBlockItem(ModBlocks.MOSSY_OAK_LOG);
+
 
 
     }

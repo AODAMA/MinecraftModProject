@@ -1,4 +1,7 @@
-// 1.20	2024-04-01T01:12:57.2637046	Block States: mossupdate
+// 1.20	2024-04-01T22:20:44.4930888	Block States: mossupdate
+6ce94216a06756a1957dd69b4eb9955d8cba571d assets/mossupdate/blockstates/mossy_birch_log.json
 211ce248cafa44e8d27ddaf399eb80dab320e1ef assets/mossupdate/blockstates/mossy_oak_log.json
+ff5cc46078b3e23b179ddc632c43fb17b918b45d assets/mossupdate/models/block/mossy_birch_log.json
+2fb846f9dd9b2529c1dccfd6995d33414c48e56b assets/mossupdate/models/block/mossy_birch_log_horizontal.json
 7e0dfaf8402048d903b57e39388a4aa9dbf9fa5c assets/mossupdate/models/block/mossy_oak_log.json
 a26d8fb27cbaceed2ca6083c9fcfda3180868eec assets/mossupdate/models/block/mossy_oak_log_horizontal.json

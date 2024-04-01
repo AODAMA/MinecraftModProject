@@ -36,6 +36,18 @@ public class MossSporeItem extends Item {
             // Return success result
             return InteractionResult.SUCCESS;
         }
+        else if(block == Blocks.BIRCH_LOG){
+            // Replace the block with your desired block
+            world.setBlockAndUpdate(pos, ModBlocks.MOSSY_BIRCH_LOG.get().defaultBlockState());
+
+            // Remove the item from the player's inventory
+            if (!pContext.getPlayer().isCreative()) {
+                pContext.getItemInHand().shrink(1);
+            }
+
+            // Return success result
+            return InteractionResult.SUCCESS;
+        }
 
         // If the clicked block is not of your desired type, let Minecraft handle it
         return super.useOn(pContext);
